@@ -19,4 +19,4 @@ Feature: Creation of a new account
     Then Input Zipcode 33023
     Then Choose State/Sity Fl, Hollywood
     Then Click on Create Account button
-    Then Verify that text is here: Profile Info
+    Then Verify that text is here: Create an Account

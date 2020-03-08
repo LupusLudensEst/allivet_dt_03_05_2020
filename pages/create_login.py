@@ -19,7 +19,7 @@ class CreateLogin(Page):
     INPT_ZIP = (By.ID , "BillingAddressControl_txtPostal")
     CHOOSE_STT_CTY = (By.ID, "billing-city-states")
     CLCK_CRT_ACCNT_BTN = (By.ID , "create-customer-account")
-    TEXT_FIELD = (By.CSS_SELECTOR, "div.outer-inner-box")
+    TEXT_FIELD = (By.CSS_SELECTOR, "div.outer-inner-box") # (By.XPATH, "//div[@class='login-inner-pages']/h1")  # (By.XPATH, "//div[@class='order-info2']/h2")
 
     def click_on_create_new_acc_tab(self):
         """
@@ -111,4 +111,8 @@ class CreateLogin(Page):
          Verify that text is here: Account and Contact Information
          """
          self.verify_text(text, *self.TEXT_FIELD)
+
+
+
+
 
