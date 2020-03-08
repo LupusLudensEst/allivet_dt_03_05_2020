@@ -1,4 +1,5 @@
 from pages.main_page import MainPage
+from pages.create_login import CreateLogin
 
 
 class Application:
@@ -7,5 +8,6 @@ class Application:
         self.driver = driver
 
         self.main_page = MainPage(self.driver)
+        self.create_login = CreateLogin(self.driver)
 
 

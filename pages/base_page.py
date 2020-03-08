@@ -26,6 +26,9 @@ class Page:
         e.clear()
         e.send_keys(text)
 
+    def choose_text(self, text, *locator):
+        self.driver.find_element(*locator)
+
     def open_page(self, url: str=''):
         #logger.info(f'Opening page {self.base_url + url}')
         self.driver.get(self.base_url + url)
