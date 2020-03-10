@@ -18,8 +18,8 @@ class CreateLogin(Page):
     CHOOSE_CNTR = (By.XPATH, "//option[@value='United States of America']") # (By.ID, "BillingAddressControl_drpCountry")
     INPT_ZIP = (By.ID , "BillingAddressControl_txtPostal")
     CHOOSE_STT_CTY = (By.ID, "billing-city-states")
-    CLCK_CRT_ACCNT_BTN = (By.ID , "create-customer-account")
-    TEXT_FIELD = (By.CSS_SELECTOR, "div.outer-inner-box") # (By.XPATH, "//div[@class='login-inner-pages']/h1")  # (By.XPATH, "//div[@class='order-info2']/h2")
+    CLCK_CRT_ACCNT_BTN = (By.ID, "create-customer-account")
+    TEXT_FIELD = (By.ID, 'errorSummary_Board')
 
     def click_on_create_new_acc_tab(self):
         """
