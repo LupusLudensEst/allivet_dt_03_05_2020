@@ -11,7 +11,7 @@ Feature: Creation of a new account
     Then Input Telephone 4074354433
     Then Input Mobile 4074354433
     Then Input Account Name FirstName LastName
-    Then Input Email Address sanoy2006@mail.ru
+    Then Input Email Address sanoy2006!d@rambler.ru
     Then Input Password Password_Test
     Then Confirm Password Password_Test
     Then Input Address 6058 SW 18TH ST APT 4
@@ -19,4 +19,4 @@ Feature: Creation of a new account
     Then Input Zipcode 33023
     Then Choose State/Sity Fl, Hollywood
     Then Click on Create Account button
-    Then Verify that text is here: Email address already in use
+    Then Verify that text is here: Account and Contact Information

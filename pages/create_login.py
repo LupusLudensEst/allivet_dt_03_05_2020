@@ -19,7 +19,7 @@ class CreateLogin(Page):
     INPT_ZIP = (By.ID , "BillingAddressControl_txtPostal")
     CHOOSE_STT_CTY = (By.ID, "billing-city-states")
     CLCK_CRT_ACCNT_BTN = (By.ID, "create-customer-account")
-    TEXT_FIELD = (By.ID, 'errorSummary_Board')
+    TEXT_FIELD = (By.CSS_SELECTOR, '#errorSummary_Board_Errors li') # (By.ID, 'errorSummary_Board')
 
     def click_on_create_new_acc_tab(self):
         """
